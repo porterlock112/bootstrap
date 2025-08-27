@@ -10,11 +10,17 @@ toc: true
 ### Helpers
 
 - Ratio helpers have been moved to utilities.
+- Dropped clearfix helper for `.d-flow-root` utility.
 
 ### Utilities
 
 - Ratio helpers are now powered by the utility API and use simplified values without `calc()`.
 - mdo-do: Need to refactor utilities API if we want to restor the commented out custom ratios.
+- **Display utilities:** added `flow-root` option for a modern clearfix.
+- **Sizing utilities:**
+  - Renamed `.mh-*`/`.mw-*` to `.max-h-*`/`.max-w-*`
+  - Added `.min-h-*` and `.min-w-*` utilities with two default values, `0` and `100%`
+  - Added `auto`, `min-content`, `max-content`, and `fit-content` to `width` and `height` utilities.
 
 ### Sass
 
