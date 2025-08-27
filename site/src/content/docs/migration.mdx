@@ -26,4 +26,18 @@ toc: true
 
 - Dropped support for Node Sass, including no longer testing any of our source CSS against it.
 - Removed `add()` and `subtract()` functions. Use `calc()` instead.
-- Dropped the deprecated `$variable-prefix`, use `$prefix` instead.
+- **Removes all deprecated Sass variables and values:**
+  - Removed `$variable-prefix`, use `$prefix` instead.
+  - Removed `$nested-kbd-font-weight`, no replacement.
+  - Removed `muted`, `black-50`, and `white-50` from text colors utilities map
+  - Consolidated carousel dark variables, removing `$carousel-dark-indicator-active-bg`, `$carousel-dark-caption-color`, and `$carousel-dark-control-icon-filter` for their reassigned counterparts.
+  - Removed `$btn-close-white-filter` for `$btn-close-filter-dark`.
+  - Removed `$border-radius-2xl`, use `$border-radius-xxl`.
+  - Removed `$text-muted` for secondary color.
+  - Removed `$hr-bg-color` for `$hr-border-color` and `$hr-height` for `$hr-border-width`.
+  - Removed unused `$dropdown-header-padding` for the `-x`/`-y` split variables.
+  - Removed unused `$accordion-button-focus-border-color`.
+  - Removed unused `$tooltip-arrow-color`.
+  - Removed unused `$popover-arrow-color` and `$popover-arrow-outer-color`
+  - Removed unused `$alert-bg-scale`, `$alert-border-scale`, and `$alert-color-scale` (replaced by theme tokens)
+  - Removed unused `$list-group-item-bg-scale` and `$list-group-item-color-scale` (replaced by theme tokens)
